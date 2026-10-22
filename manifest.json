@@ -1,6 +1,6 @@
 {
-  "name": "Marcación Focus",
-  "short_name": "Marcación",
+  "name": "Inducargo",
+  "short_name": "Inducargo",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
