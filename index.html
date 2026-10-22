@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Aplicación AppSheet</title>
+  <title>Inducargo</title>
+
+  <!-- Ícono y nombre del atajo -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Inducargo">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
+
   <style>
     body, html {
       margin: 0;
@@ -19,6 +28,13 @@
   </style>
 </head>
 <body>
-  <iframe src="https://www.appsheet.com/start/9efa1e0f-3036-46ba-a6a4-a9da8b3536c8?platform=desktop#appName=Inducargo-526034438&vss=H4sIAAAAAAAAA6WOMQ7CMAxF7_LnnCArYkAIliIWwhAaF0W0SUVcoIpydxKgghUY_e33_CMulq4V6_oEuYvvaUkjJKLCZuxJQSrMvOOzbxWEwlp3z7AiZuuOQSEh7cXEMwXI-B0u__suYA05to2lc3EVMjteXF4XKgcTgyTQDawPLT0KF8aGhZsbyytv8tzoNlBK-a7x9RDIbHO9H2oV6a3Xznxq70sAcQF5AQAA&view=Settings"></iframe>
+  <iframe
+    src="https://www.appsheet.com/start/9efa1e0f-3036-46ba-a6a4-a9da8b3536c8?platform=desktop#appName=Inducargo-526034438&vss=H4sIAAAAAAAAA6WOMQ7CMAxF7_LnnCArYkAIliIWwhAaF0W0SUVcoIpydxKgghUY_e33_CMulq4V6_oEuYvvaUkjJKLCZuxJQSrMvOOzbxWEwlp3z7AiZuuOQSEh7cXEMwXI-B0u__suYA05to2lc3EVMjteXF4XKgcTgyTQDawPLT0KF8aGhZsbyytv8tzoNlBK-a7x9RDIbHO9H2oV6a3Xznxq70sAcQF5AQAA&view=Settings"
+    allow="geolocation *; camera *; microphone *; fullscreen *; clipboard-write *">
+  </iframe>
+  <script>
+    // Si Safari muestra esta página desde "Atrás", la recarga para traer datos nuevos
+    window.addEventListener("pageshow", e => { if (e.persisted) location.reload(); });
+  </script>
 </body>
 </html>
